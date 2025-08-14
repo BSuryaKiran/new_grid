@@ -1,35 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// Importing React library and Component class
+import React, { Component } from 'react';
+// Importing external CSS file to style the component
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+class App extends Component {
+  // The render method returns the JSX (UI structure) to be displayed
+  render() {
+    return (
+      <>
+        {/* Header section containing a logo */}
+        <header>
+          <div className='logo'>My Projects</div>
+          {/* .logo class styles the text to look like a bold site/project title */}
+        </header>
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+        {/* Main content section displaying project cards in a grid layout */}
+        <section>
+          {/* Each card displays an image and a label/title below it */}
+          <div className='card'>
+            <img src='/1.jpeg' alt='' />
+            <label>Project One</label>
+          </div>
+
+          <div className='card'>
+            <img src='/2.jpeg' alt='' />
+            <label>Project Two</label>
+          </div>
+
+          <div className='card'>
+            <img src='/3.jpeg' alt='' />
+            <label>Project Three</label>
+          </div>
+
+          <div className='card'>
+            <img src='/4.jpeg' alt='' />
+            <label>Project Four</label>
+          </div>
+
+          <div className='card'>
+            <img src='/5.jpeg' alt='' />
+            <label>Project Five</label>
+          </div>
+
+          <div className='card'>
+            <img src='/6.jpeg' alt='' />
+            <label>Project Six</label>
+          </div>
+        </section>
+
+        {/* Footer section with copyright notice */}
+        <footer>
+          Copyright @ 2025. All rights reserved.
+        </footer>
+      </>
+    );
+  }
 }
 
-export default App
+// Exporting the App component so it can be used in other parts of the application
+export default App;

@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  Base: '/new_grid/',
+  base: '/new_grid/',
   plugins: [react()],
 })

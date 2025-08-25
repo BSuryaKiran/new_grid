@@ -18,15 +18,12 @@ footer {
 
 /* ========== MAIN SECTION STYLES ========== */
 section {
-  height: calc(100% - 100px); /* Full height minus header (50px) and footer (30px) + section padding (20px total) */
-  width: calc(100% - 20px); /* Leave 10px padding on both left and right */
-  overflow: auto; /* Enable scrollbars if content exceeds the height */
-  display: grid; /* Use CSS Grid to layout child elements (like .card) */
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-  /* Create responsive grid: as many columns as fit, min width 280px, max 1 fraction of space */
-  gap: 20px; /* Space between the grid items */
-  padding: 10px; /* Padding around the section content */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* force 3 side-by-side */
+  gap: 20px;
+  padding: 20px;
 }
+
 
 /* ========== LOGO TEXT STYLING ========== */
 .logo {
